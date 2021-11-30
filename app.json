@@ -1,0 +1,7 @@
+{
+	"name": "Example Universal Links",
+	"description": "Example to Handle Universal links in iOS",
+	"repository": "https://git.heroku.com/deep-links-universal.git",
+	"logo": "https://deep-links-universal.herokuapp.com/logo.jpg",
+	"keywords": ["Example", "universal links", "iOS"]
+}

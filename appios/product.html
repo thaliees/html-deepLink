@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <!-- Use the next lines to avoid to use button (you must comment the lines #16 - #26) -->
+        <!-- <script type="text/javascript">
+            window.onload = function() {
+                // Deep link to your app goes here
+                document.getElementById("l").src = "deep-link-universal://product?id=5e59812b72fc3f000437bf67";
+
+                setTimeout(function() {
+                    // Link to the App Store should go here -- only fires if deep link fails                
+                    window.location ='https://apps.apple.com/mx/app/deep-link-universal/1485945892';
+                }, 300);
+            };
+        </script>
+        <iframe id="l" width="1" height="1" style="visibility:hidden"></iframe> -->
+        <script language="javascript">
+            function open_appstore() {
+                window.location ='https://apps.apple.com/mx/app/deep-link-universal/1485945892';
+                // window.location ='https://apps.apple.com/mx';
+            }
+        
+            function try_to_open_app() {
+                setTimeout('open_appstore()', 300);
+            }
+        </script>
+        <a onClick="javascript:try_to_open_app();" href="deep-link-universal://product?id=5e59812b72fc3f000437bf67">URL Scheme Link</a>
+    </body>
+</html>
